@@ -1,0 +1,137 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="Widget.GifMoviewView" parent="@android:style/Widget"></style>
+
+    <style name="StyleItemOffer" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textColor">#ff000000</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_offer</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="StyleItemAnswer" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/item_answer</item>
+        <item name="android:paddingTop">2.0dip</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="style_more_app_title">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+
+    <style name="style_team_slogan">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+    </style>
+
+    <style name="style_tv_continues">
+        <item name="android:textSize">25.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">4.0</item>
+        <item name="android:paddingLeft">@dimen/winscreen_tv_continues_padding_left_right</item>
+        <item name="android:paddingRight">@dimen/winscreen_tv_continues_padding_left_right</item>
+    </style>
+
+    <style name="style_menu_item_play">
+        <item name="android:textSize">24.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowDx">1.0</item>
+        <item name="android:drawableRight">@drawable/btn_chose_n</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="style_actress_info">
+        <item name="android:textSize">19.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff0000ff</item>
+        <item name="android:typeface">serif</item>
+        <item name="android:shadowColor">#ffffffff</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    
+   
+    
+     <style name="style_piece_cell">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        </style>
+
+    <style name="style_piece_image">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:background">@android:color/black</item>
+        <item name="android:clickable">false</item>
+        <item name="android:contentDescription">@string/app_name</item>
+    </style>
+
+    <style name="style_piece_tv">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:clickable">false</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <declare-styleable name="FontizeTextView">
+        <attr name="textfont">
+            <enum name="sans" value="0" />
+            <enum name="sansbold" value="1" />
+            <enum name="serif" value="2" />
+            <enum name="myriad" value="3" />
+            <enum name="myriadbold" value="4" />
+        </attr>
+    </declare-styleable>
+
+</resources>

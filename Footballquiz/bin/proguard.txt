@@ -1,0 +1,24 @@
+# view AndroidManifest.xml #generated:53
+-keep class com.google.android.gms.ads.AdActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.gtotek.football.activity.PlayingImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.gtotek.football.activity.SplashScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:47
+-keep class com.gtotek.football.activity.StartPlayActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:42
+-keep class com.gtotek.football.activity.VictoryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:37
+-keep class com.gtotek.football.activity.WinActivity { <init>(...); }
+
+# view res/layout/activity_playing_imagegif.xml #generated:21
+-keep class com.gtotek.football.customview.GifMovieView { <init>(...); }
+
+# view res/layout/activity_win_jav.xml #generated:62
+-keep class org.sufficientlysecure.htmltextview.HtmlTextView { <init>(...); }
+

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Start screen -->
+    <dimen name="startscreen_iv_welcome_height">180dip</dimen>
+	<dimen name="startscreen_iv_welcome_width">250dip</dimen>
+	<dimen name="startscreen_tv_play_height">45.0dip</dimen>
+	<dimen name="startscreen_tv_play_margin_left_right">31.0dip</dimen>
+	<dimen name="startscreen_tv_play_margin_top">10.0dip</dimen>
+	<dimen name="startscreen_tv_play_padding_left_right">15.0dip</dimen>
+	
+    <!-- Playing screen -->
+    <dimen name="dmn_img_question_height">200dp</dimen>
+    <dimen name="dmn_view_question_margin_left_right">30dp</dimen>
+    <dimen name="dmn_view_question_padding">4dp</dimen>
+    
+    
+    <!-- Cell answer/suggestion -->
+    <dimen name="dmn_cell_answer_question_height_width">34dp</dimen>
+    <dimen name="dmn_grv_suggestion_answer_verticalSpacing">5dp</dimen>
+    <dimen name="dmn_grv_suggestion_answer_horizontalSpacing">1dp</dimen>
+</resources>
