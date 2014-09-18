@@ -1,0 +1,43 @@
+<resources>
+    
+    <string name="internet_error_msg">Vui lòng kiểm tra cài đặt mạng !!!</string>
+
+    <string name="app_name">Football Quiz</string>
+    <string name="slogan">Nothing is impossible</string>
+    <string name="chucmung">CHÚC MỪNG</string>
+    <string name="victory">^TUYỆT VỜI^</string>
+    <string name="vic_info">Bạn đã hoàn thành phần chơi này</string>
+    <string name="dapan">Bạn đã tìm ra đáp án</string>
+    <string name="thuong">Bạn được cộng: +10 Xu</string>
+    <string name="text_btnClose">Đóng</string>
+    <string name="text_title_help_dialog">Gợi ý: </string>
+    <string name="tv_play1_title">Ảnh tĩnh</string>
+    <string name="tv_play2_title">Ảnh động</string>
+    <string name="tv_play3_title">Ảnh JAV</string>
+     <string name="tv_play4_title">Ảnh ẩn</string>
+    <string name="tv_continues_title">Tiếp tục</string>
+    <string name="btn_help_negative">Hủy</string>
+    <string name="btn_help_positive">Được</string>
+    <string name="builder_message">Sử dụng tính năng gợi ý Bạn có thể phải mất 20 Xu</string>
+    <string name="toast_share_message">Bạn được tặng 5 xu cho mỗi lần share !!!</string>
+    <string name="toast_help_error_message">Bạn không đủ xu !!!</string>
+    <string name="raroi">Xinh quá</string>
+    <string name="jav_default_info">Thông tin diễn viên đang được cập nhật</string>
+    <string name="desc_jav">This is your string.
+  		 This is the second line of your string.\n\n 
+  		 Third line of your string.</string>
+    <string name="version_info"> Túm chữ\nVersion:1.2.0\nEmail:Gtotek135@gmail.com\nDev: GTOTek Team</string>
+    <string name="close">Thử thách</string>
+    <string name="id_admob">ca-app-pub-7725997656573645/9337621412</string>
+    
+    <string name="number_1">1</string>
+    <string name="number_2">2</string>
+    <string name="number_3">3</string>
+    <string name="number_4">4</string>
+    <string name="number_5">5</string>
+    <string name="number_6">6</string>
+    <string name="number_7">7</string>
+    <string name="number_8">8</string>
+    <string name="number_9">9</string>
+
+</resources>

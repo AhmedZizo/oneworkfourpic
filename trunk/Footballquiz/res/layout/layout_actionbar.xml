@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:myview="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/top_bar3"
+    android:paddingTop="@dimen/actionbar_padding_top_bottom"
+    android:paddingBottom="@dimen/actionbar_padding_top_bottom"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:weightSum="11" >
+
+    <ImageView
+        android:id="@+id/iv_back"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_iv_back_width_height"
+        android:layout_weight="2"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:paddingTop="@dimen/actionbar_iv_back_padding_top"
+        android:src="@drawable/ic_home" />
+
+    <ImageView
+        android:id="@+id/iv_help"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_iv_help_width_height"
+        android:layout_weight="2"
+        android:src="@drawable/btn_open_1char"
+        android:contentDescription="@string/app_name"
+        android:gravity="center"
+        android:paddingTop="@dimen/actionbar_iv_back_padding_top" />
+
+    <TextView
+        android:id="@+id/tv_lever"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:textColor="#ff0000ff"
+        android:textSize="@dimen/actionbar_tv_level_textsize"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/iv_share"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_iv_help_width_height"
+        android:layout_weight="1.6"
+        android:src="@drawable/ic_share"
+        android:contentDescription="@string/app_name"
+        android:gravity="center" />
+
+    <TextView
+        android:id="@+id/tv_ruby"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/actionbar_tv_ruby_height"
+        android:layout_weight="2.4"
+        android:background="@drawable/ic_coin"
+        android:gravity="center"
+        android:textColor="#ff300000"
+        android:textSize="16.0sp" />
+
+</LinearLayout>
