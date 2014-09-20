@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg" 
-    android:id="@+id/parent"
+    android:background="@drawable/bg"
     android:orientation="vertical" >
 
     <include layout="@layout/layout_actionbar" />
@@ -14,18 +14,17 @@
         android:layout_height="@dimen/dmn_img_question_height"
         android:layout_marginLeft="@dimen/dmn_view_question_margin_left_right"
         android:layout_marginRight="@dimen/dmn_view_question_margin_left_right"
-        android:background="@drawable/view_round_corners"
         android:layout_marginTop="15dp"
-        android:padding="@dimen/dmn_view_question_padding" >
+        android:background="@drawable/bg_photo" >
 
         <ImageView
             android:id="@+id/img_question"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_centerInParent="true"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
             android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            android:src="@drawable/st" /> 
+            android:src="@drawable/st" />
     </RelativeLayout>
 
     <GridView

@@ -2,13 +2,13 @@
 
     <!--
         Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
     <style name="AppBaseTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
+            backward-compatibility can go here.
         -->
     </style>
 
@@ -120,54 +120,99 @@
         <item name="android:layout_centerInParent">true</item>
         <item name="android:clickable">false</item>
         <item name="android:textColor">@android:color/white</item>
-    </style>  
+    </style>
 
     <style name="ActionBar" parent="@android:style/Widget">
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@drawable/bg_actionbar</item>
     </style>
-    
-    
-       <style name="Button" parent="@android:style/Widget.Button" />
+
+    <style name="Button" parent="@android:style/Widget.Button" />
+
     <style name="Button.Green" parent="@style/Button">
         <item name="android:textSize">25.0dip</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@drawable/sel_btn_green</item>
     </style>
+
     <style name="Button.Green.Big" parent="@style/Button.Green">
         <item name="android:textSize">30.0dip</item>
         <item name="android:paddingLeft">30.0dip</item>
         <item name="android:paddingRight">30.0dip</item>
     </style>
+
     <style name="Button.Green.Medium" parent="@style/Button.Green">
         <item name="android:textSize">30.0dip</item>
         <item name="android:paddingLeft">24.0dip</item>
         <item name="android:paddingRight">24.0dip</item>
     </style>
+
     <style name="Button.Green.Small" parent="@style/Button.Green">
         <item name="android:textSize">14.0dip</item>
         <item name="android:background">@drawable/sel_btn_green_small</item>
         <item name="android:padding">5.0dip</item>
     </style>
+
     <style name="Button.Blue" parent="@style/Button">
         <item name="android:textSize">15.0dip</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@drawable/sel_btn_blue</item>
     </style>
+
     <style name="Button.Blue.Big" parent="@style/Button.Blue">
         <item name="android:textSize">30.0dip</item>
         <item name="android:paddingLeft">30.0dip</item>
         <item name="android:paddingRight">30.0dip</item>
     </style>
+
     <style name="Button.Blue.Medium" parent="@style/Button.Blue">
         <item name="android:textSize">24.0dip</item>
         <item name="android:paddingLeft">24.0dip</item>
         <item name="android:paddingRight">24.0dip</item>
     </style>
+
     <style name="Button.Grey" parent="@style/Button">
         <item name="android:textSize">15.0dip</item>
         <item name="android:textColor">#ffffffff</item>
         <item name="android:background">@drawable/sel_btn_grey</item>
+    </style>
+
+    <style name="Text" parent="@android:style/TextAppearance" />
+
+    <style name="Text.Big" parent="@style/Text">
+        <item name="android:textSize">22.0dip</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+
+    <style name="Text.ActionBarTitle" parent="@style/Text">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffebebeb</item>
+        <item name="android:shadowColor">#cc000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+
+    <style name="Text.Level" parent="@style/Text">
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffebebeb</item>
+        <item name="android:gravity">center</item>
+        <item name="android:shadowColor">#cc000000</item>
+    </style>
+
+    <style name="Text.Level.Big" parent="@style/Text.Level">
+        <item name="android:textSize">23.0dip</item>
+        <item name="android:background">@drawable/bg_level</item>
+        <item name="android:shadowDy">3.0</item>
+        <item name="android:shadowRadius">15.0</item>
+    </style>
+
+    <style name="Text.Level.Small" parent="@style/Text.Level">
+        <item name="android:textSize">13.0dip</item>
+        <item name="android:background">@drawable/bg_level_small</item>
+        <item name="android:paddingBottom">2.0dip</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">4.0</item>
     </style>
 
 </resources>

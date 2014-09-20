@@ -3,10 +3,10 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:background="@drawable/bg_actionbar"
-    android:paddingTop="@dimen/actionbar_padding_top_bottom"
-    android:paddingBottom="@dimen/actionbar_padding_top_bottom"
     android:gravity="center"
     android:orientation="horizontal"
+    android:paddingBottom="@dimen/actionbar_padding_top_bottom"
+    android:paddingTop="@dimen/actionbar_padding_top_bottom"
     android:weightSum="11" >
 
     <ImageView
@@ -24,29 +24,36 @@
         android:layout_width="0dp"
         android:layout_height="@dimen/actionbar_iv_help_width_height"
         android:layout_weight="2"
-        android:src="@drawable/btn_open_1char"
         android:contentDescription="@string/app_name"
         android:gravity="center"
-        android:paddingTop="@dimen/actionbar_iv_back_padding_top" />
+        android:paddingTop="@dimen/actionbar_iv_back_padding_top"
+        android:src="@drawable/btn_open_1char" />
 
-    <TextView
-        android:id="@+id/tv_lever"
+    <FrameLayout
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="3"
-        android:gravity="center"
-        android:textColor="#ff0000ff"
-        android:textSize="@dimen/actionbar_tv_level_textsize"
-        android:textStyle="bold" />
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_lever"
+            style="@style/Text.Level.Big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="143"
+            android:textColor="#ff0000ff"
+            android:textStyle="bold" />
+    </FrameLayout>
 
     <ImageView
         android:id="@+id/iv_share"
         android:layout_width="0dp"
         android:layout_height="@dimen/actionbar_iv_help_width_height"
         android:layout_weight="1.6"
-        android:src="@drawable/ic_share"
         android:contentDescription="@string/app_name"
-        android:gravity="center" />
+        android:gravity="center"
+        android:src="@drawable/ic_share" />
 
     <TextView
         android:id="@+id/tv_ruby"
