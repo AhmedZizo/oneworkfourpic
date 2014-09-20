@@ -9,7 +9,7 @@ import android.view.Window;
 import android.widget.GridView;
 import android.widget.TextView;
 
-import com.gtotek.football.adapter.DecodingAdapter; 
+import com.gtotek.football.adapter.DecodingAdapter;
 import com.gtotek.football.base.Constans;
 import com.gtotek.football.dao.QuestionEntity;
 import com.gtotek.football.util.SoundUtil;
@@ -49,7 +49,7 @@ public class WinActivity extends Activity {
 
 		mGrvDecoding = (GridView) this.findViewById(R.id.gv_win);
 		mGrvDecoding.setAdapter(decodingAdapter);
-		
+
 		SoundUtil.hexat(mContext, SoundUtil.SFX_PASS);
 
 	}

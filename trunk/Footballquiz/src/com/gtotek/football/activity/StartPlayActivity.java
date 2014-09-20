@@ -19,7 +19,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 	// private Context mContext = this;
 	private TextView tvPlay; 
 
-	private ImageView mImgHcgd;
+	private ImageView mImgWheel;
 
 	private ImageView imgInfo;
 
@@ -42,16 +42,16 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 			}
 		});
  
-	/*	imgInfo = (ImageView) this.findViewById(R.id.ivInfo);
+		imgInfo = (ImageView) this.findViewById(R.id.ivInfo);
 		imgInfo.setOnClickListener(this);
 
-		mImgHcgd = (ImageView) this.findViewById(R.id.ivHcgd);
-		mImgHcgd.setOnClickListener(new OnClickListener() {
+		mImgWheel = (ImageView) this.findViewById(R.id.ivWheel);
+		mImgWheel.setOnClickListener(new OnClickListener() {
 
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-				final String appPackageName = "com.gtoteck.app.haychongiadung"; // Can
+				final String appPackageName = "com.gtotek.wheeloffortune"; // Can
 																				// also
 																				// use
 				// getPackageName(),
@@ -59,7 +59,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri
 						.parse("market://details?id=" + appPackageName)));
 			}
-		});   */
+		});   
 	}
 
 	@Override
