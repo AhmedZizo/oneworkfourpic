@@ -18,4 +18,8 @@
     <dimen name="dmn_cell_answer_question_height_width">34dp</dimen>
     <dimen name="dmn_grv_suggestion_answer_verticalSpacing">5dp</dimen>
     <dimen name="dmn_grv_suggestion_answer_horizontalSpacing">1dp</dimen>
+    
+    
+        <!-- Action bar -->
+    <dimen name="actionbar_height">45dp</dimen>
 </resources>
