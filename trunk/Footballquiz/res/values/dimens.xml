@@ -43,7 +43,8 @@
 
     <!--  -->
 
-    <dimen name="actionBarHeight">40.0dip</dimen>
+    <!-- Action bar -->
+    <dimen name="actionbar_height">60dp</dimen>
     <dimen name="cps_actionbar_height">51.0dip</dimen>
 
 </resources>
