@@ -31,7 +31,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_start);
 
-		tvPlay = (TextView) findViewById(R.id.tv_play);
+		tvPlay = (TextView) findViewById(R.id.tvPlay);
 		tvPlay.setOnClickListener(new OnClickListener() {
 
 			@Override
@@ -42,7 +42,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 			}
 		});
  
-		imgInfo = (ImageView) this.findViewById(R.id.ivInfo);
+	/*	imgInfo = (ImageView) this.findViewById(R.id.ivInfo);
 		imgInfo.setOnClickListener(this);
 
 		mImgHcgd = (ImageView) this.findViewById(R.id.ivHcgd);
@@ -59,7 +59,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri
 						.parse("market://details?id=" + appPackageName)));
 			}
-		});   
+		});   */
 	}
 
 	@Override
