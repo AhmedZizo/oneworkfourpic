@@ -1,5 +1,7 @@
 package com.gtotek.football.activity;
 
+import com.gtotek.football.base.Constans;
+import com.gtotek.football.util.PreferenceUtil;
 import com.gtotek.footballquiz.R;
 
 import android.app.Activity;
@@ -13,17 +15,21 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.Window;
 import android.widget.ImageView;
-import android.widget.TextView; 
+import android.widget.TextView;
 
 public class StartPlayActivity extends Activity implements View.OnClickListener {
 	// private Context mContext = this;
-	private TextView tvPlay; 
+	private TextView tvPlay;
 
 	private ImageView mImgWheel;
 
 	private ImageView imgInfo;
 
+	private ImageView mImgSound;
+
 	private Context mContext = this;
+
+	private int soundState = 1;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -41,7 +47,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 				startActivity(intent);
 			}
 		});
- 
+
 		imgInfo = (ImageView) this.findViewById(R.id.ivInfo);
 		imgInfo.setOnClickListener(this);
 
@@ -52,14 +58,43 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
 				final String appPackageName = "com.gtotek.wheeloffortune"; // Can
-																				// also
-																				// use
+																			// also
+																			// use
 				// getPackageName(),
 				// as below
 				startActivity(new Intent(Intent.ACTION_VIEW, Uri
 						.parse("market://details?id=" + appPackageName)));
 			}
-		});   
+		});
+
+		mImgSound = (ImageView) this.findViewById(R.id.ivSound);
+
+		soundState = PreferenceUtil.getValue(mContext, Constans.KEY_SOUND, 1);
+
+		if (soundState == 1) {
+			// sound enable
+			mImgSound.setBackgroundResource(R.drawable.btn_sound_on);
+		} else {
+			mImgSound.setBackgroundResource(R.drawable.btn_sound_off);
+		}
+
+		mImgSound.setOnClickListener(new OnClickListener() {
+
+			@Override
+			public void onClick(View v) {
+				// TODO Auto-generated method stub
+				if (soundState == 1) {
+					soundState = 0;
+					mImgSound.setBackgroundResource(R.drawable.btn_sound_off);
+
+				} else {
+					soundState = 1;
+					mImgSound.setBackgroundResource(R.drawable.btn_sound_on);
+				}
+				
+				 PreferenceUtil.setValue(mContext, Constans.KEY_SOUND, soundState);
+			}
+		});
 	}
 
 	@Override
