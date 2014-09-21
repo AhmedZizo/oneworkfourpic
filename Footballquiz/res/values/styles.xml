@@ -223,7 +223,7 @@
 
     <style name="dialog_animation_grow">
         <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
-        <item name="@android:windowExitAnimation">@anim/grow_from_top</item>
+<!--         <item name="@android:windowExitAnimation">@anim/grow_from_top</item> -->
     </style>
 
 </resources>
