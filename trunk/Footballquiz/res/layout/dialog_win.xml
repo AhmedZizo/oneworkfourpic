@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1.0"
             android:gravity="bottom|center"
-            android:text="WONDERFUL!"
+            android:text="@string/wonderful"
             android:textColor="#54C40F"
             android:textSize="35.0dip"
             app:fontName="North Face.ttf" />
@@ -33,7 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="2.0"
             android:gravity="top|center"
-            android:text="You&apos;ve guessed the word"
+            android:text="@string/guessed"
             android:textColor="#ffffffff"
             android:textSize="24.0dip"
             app:fontName="MyriadPro.ttf" />
@@ -43,6 +43,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_weight="0.0"
+        android:contentDescription="@string/app_name"
         android:scaleType="fitXY"
         android:src="@drawable/bg_divider"
         android:visibility="invisible" />

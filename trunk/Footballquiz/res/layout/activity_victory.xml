@@ -24,7 +24,7 @@
         android:layout_below="@+id/tvCongru"
         android:layout_marginTop="10dp"
         android:gravity="top|center"
-        android:text="You&apos;re too knowledgeable about football"
+        android:text="@string/admire"
         android:textColor="#ffffffff"
         android:textSize="24.0dip"
         app:fontName="MyriadPro.ttf" />
@@ -45,7 +45,7 @@
         android:layout_above="@+id/tvClose"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="15dp"
-        android:text="Wait for the next challenge"
+        android:text="@string/wait"
         android:textColor="#ffffffff"
         android:textSize="24.0dip"
         app:fontName="MyriadPro-Bold.otf" />
