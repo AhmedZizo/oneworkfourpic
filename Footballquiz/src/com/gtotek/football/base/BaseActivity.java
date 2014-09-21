@@ -314,9 +314,9 @@ public abstract class BaseActivity extends Activity {
 
 	private void checkWin() {
 
-		// if (mAnswerAdapter.isHaveEmpty()) {
-		// return;
-		// }
+		if (mAnswerAdapter.isHaveEmpty()) {
+			return;
+		}
 
 		if (mAnswerAdapter.suscess(mQuestionEntity)) {
 			passQuestion();

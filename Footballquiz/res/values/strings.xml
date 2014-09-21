@@ -1,7 +1,7 @@
 <resources>
     
     <string name="internet_error_msg">Vui lòng kiểm tra cài đặt mạng !!!</string>
-
+	
     <string name="app_name">Football Quiz</string>
     <string name="slogan">Nothing is impossible</string>
     <string name="congratulations">CONGRATULATION</string>
@@ -33,5 +33,7 @@
     <string name="number_7">7</string>
     <string name="number_8">8</string>
     <string name="number_9">9</string>
-
+	
+    
+    <string name="infomartion">Information:</string>
 </resources>
