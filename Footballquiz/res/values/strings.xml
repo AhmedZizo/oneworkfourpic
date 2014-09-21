@@ -4,7 +4,7 @@
 
     <string name="app_name">Football Quiz</string>
     <string name="slogan">Nothing is impossible</string>
-    <string name="chucmung">CHÚC MỪNG</string>
+    <string name="congratulations">CONGRATULATIONS</string>
     <string name="victory">WINNER</string>
     <string name="vic_info">Bạn đã hoàn thành phần chơi này</string>
     <string name="dapan">Bạn đã tìm ra đáp án</string>

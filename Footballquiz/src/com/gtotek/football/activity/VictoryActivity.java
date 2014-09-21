@@ -1,4 +1,5 @@
-package com.gtotek.football.activity; 
+package com.gtotek.football.activity;
+
 import com.gtotek.football.base.Constans;
 import com.gtotek.football.util.PreferenceUtil;
 import com.gtotek.football.util.SoundUtil;
@@ -9,29 +10,50 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.TextView;
 
 public class VictoryActivity extends Activity {
 
 	private Context mContext = this;
-	private TextView mTvBack;
+	private TextView mTvAdmire;
+	private TextView mTvWait;
+	private TextView mTvClose;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.activity_victory);
-		
-		mTvBack = (TextView)this.findViewById(R.id.tv_back);
-		mTvBack.setOnClickListener(new View.OnClickListener() {			
+
+		mTvAdmire = (TextView) this.findViewById(R.id.tvAdmire);
+		mTvWait = (TextView) this.findViewById(R.id.tvWait);
+		mTvClose = (TextView) this.findViewById(R.id.tvClose);
+
+		init();
+	}
+
+	private void init() {
+		PreferenceUtil.removeValue(mContext, Constans.KEY_INDEX_IMAGE);
+		SoundUtil.hexat(mContext, SoundUtil.M_CONGRAT);
+
+		Animation animTopDown = AnimationUtils.loadAnimation(mContext,
+				R.anim.grow_from_top);
+		Animation animLeftRight = AnimationUtils.loadAnimation(mContext,
+				R.anim.slide_in_left);
+		animTopDown.setDuration(2000);
+		animLeftRight.setDuration(2000);
+		mTvAdmire.setAnimation(animTopDown);
+		mTvWait.setAnimation(animLeftRight);
+
+		mTvClose.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				finish();
 			}
-		}); 
+		});
 
-		PreferenceUtil.removeValue(mContext, Constans.KEY_INDEX_IMAGE);
-		
-		SoundUtil.hexat(mContext, SoundUtil.M_CONGRAT);
 	}
 }
