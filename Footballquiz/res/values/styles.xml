@@ -214,5 +214,16 @@
         <item name="android:shadowDy">2.0</item>
         <item name="android:shadowRadius">4.0</item>
     </style>
+    
+    
+      <style name="dialog_animation_slide">
+        <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <style name="dialog_animation_grow">
+        <item name="@android:windowEnterAnimation">@anim/grow_from_bottom</item>
+        <item name="@android:windowExitAnimation">@anim/grow_from_top</item>
+    </style>
 
 </resources>
