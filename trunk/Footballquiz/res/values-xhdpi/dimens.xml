@@ -4,7 +4,7 @@
     <dimen name="dmn_img_question_height">220dp</dimen>
     <dimen name="dmn_view_question_margin_left_right">22dp</dimen>
     <dimen name="dmn_view_question_padding">4dp</dimen>
-    
+   <dimen name="view_img_question_height">130dp</dimen>
     <!-- Cell answer/suggestion -->
     <dimen name="dmn_cell_answer_question_height_width">38dp</dimen>
     

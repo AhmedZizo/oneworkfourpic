@@ -21,7 +21,7 @@
     <dimen name="dmn_img_question_height">200dp</dimen>
     <dimen name="dmn_view_question_margin_left_right">20dp</dimen>
     <dimen name="dmn_view_question_padding">4dp</dimen>
-
+     <dimen name="view_img_question_height">120dp</dimen>
     <!-- Cell answer/suggestion -->
     <dimen name="dmn_cell_answer_question_height_width">35dp</dimen>
     <dimen name="dmn">200dp</dimen>
