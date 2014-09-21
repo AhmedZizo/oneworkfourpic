@@ -2,6 +2,8 @@ package com.gtotek.football.base;
 
 public class Constans {
 	 
+	
+	public static final String KEY_SOUND = "sound";
 
 	public static final String KEY_QUESTIONENTITY = "key_questionentity";
 

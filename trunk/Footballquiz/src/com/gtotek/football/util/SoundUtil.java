@@ -1,6 +1,7 @@
 package com.gtotek.football.util;
  
 
+import com.gtotek.football.base.Constans;
 import com.gtotek.footballquiz.R;
 
 import android.content.Context;
@@ -22,6 +23,12 @@ public class SoundUtil {
 	public static int SFX_PASS = R.raw.sfx_pass;
 
 	public static void hexat(Context context, int sound) {
+		int soundState =  PreferenceUtil.getValue(context, Constans.KEY_SOUND, 1);
+		
+		if(soundState == 0){
+			return;
+		}
+		
 		final MediaPlayer mediaPlayer = MediaPlayer.create(context, sound);
 		mediaPlayer.start();
 		mediaPlayer.setOnCompletionListener(new OnCompletionListener() {
