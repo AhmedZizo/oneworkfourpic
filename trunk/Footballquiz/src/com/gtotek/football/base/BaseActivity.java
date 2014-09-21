@@ -314,11 +314,13 @@ public abstract class BaseActivity extends Activity{
 
 	private void checkWin() {
 
-		if (mAnswerAdapter.isHaveEmpty()) {
-			return;
-		}
-
-		if (mAnswerAdapter.suscess(mQuestionEntity)) {	
+//		if (mAnswerAdapter.isHaveEmpty()) {
+//			return;
+//		}
+ 
+//		if (mAnswerAdapter.suscess(mQuestionEntity)) {
+		if(true){
+ 
 			passQuestion();
 			ruby += Constans.RUBY_BONUS;
 			PreferenceUtil.setValue(mContext, Constans.KEY_RUBY, ruby);
