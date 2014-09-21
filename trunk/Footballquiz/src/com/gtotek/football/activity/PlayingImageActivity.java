@@ -2,6 +2,7 @@ package com.gtotek.football.activity;
 
 import java.io.InputStream;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
@@ -11,12 +12,16 @@ import android.widget.ImageView;
 
 import com.gtotek.football.base.BaseActivity;
 import com.gtotek.football.base.Constans;
+import com.gtotek.football.dialog.WinDialog;
+import com.gtotek.football.dialog.WinDialog.OnCloseWinDialog;
 import com.gtotek.football.util.PreferenceUtil;
 import com.gtotek.footballquiz.R;
 
-public class PlayingImageActivity extends BaseActivity {
-
+public class PlayingImageActivity extends BaseActivity implements
+		OnCloseWinDialog {
+	private Context mContext = this;
 	private ImageView mImgQuestion;
+	private WinDialog mWinDialog;
 
 	@Override
 	protected void initialize() {
@@ -42,8 +47,8 @@ public class PlayingImageActivity extends BaseActivity {
 
 		Bitmap bitmap = getBitmapFromAsset(this.mQuestionEntity.getImage());
 		this.mImgQuestion.setImageBitmap(bitmap);
-//		bitmap.recycle();
-//		bitmap = null;
+		// bitmap.recycle();
+		// bitmap = null;
 
 	}
 
@@ -52,7 +57,7 @@ public class PlayingImageActivity extends BaseActivity {
 		InputStream istr = null;
 
 		try {
-			istr = assetManager.open("logofootball/"+name);
+			istr = assetManager.open("logofootball/" + name);
 		} catch (Exception e) {
 			// TODO: handle exception
 			e.printStackTrace();
@@ -64,9 +69,19 @@ public class PlayingImageActivity extends BaseActivity {
 	@Override
 	protected void passQuestion() {
 		// TODO Auto-generated method stub
-		Intent intent = new Intent(mContext, WinActivity.class);
-		intent.putExtra(Constans.KEY_QUESTIONENTITY, mQuestionEntity);
-		startActivity(intent);
+		/*
+		 * Intent intent = new Intent(mContext, WinActivity.class);
+		 * intent.putExtra(Constans.KEY_QUESTIONENTITY, mQuestionEntity);
+		 * startActivity(intent);
+		 */
+		mWinDialog = new WinDialog(mContext, mQuestionEntity);
+		mWinDialog.setOnCloseWinDialog(this);
+		mWinDialog.show();
+	}
+
+	@Override
+	public void closeDialog() {
+		next();
 	}
 
 }

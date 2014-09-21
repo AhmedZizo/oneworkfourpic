@@ -29,9 +29,8 @@ import com.google.android.gms.ads.AdListener;
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.InterstitialAd;
 import com.gtotek.football.activity.VictoryActivity;
-import com.gtotek.football.activity.WinActivity;
 import com.gtotek.football.adapter.AnswerAdapter;
-import com.gtotek.football.adapter.SuggestionAdapter;  
+import com.gtotek.football.adapter.SuggestionAdapter;
 import com.gtotek.football.dao.Letter;
 import com.gtotek.football.dao.QuestionDao;
 import com.gtotek.football.dao.QuestionEntity;
@@ -43,7 +42,7 @@ import com.gtotek.football.util.PreferenceUtil;
 import com.gtotek.football.util.SoundUtil;
 import com.gtotek.footballquiz.R;
 
-public abstract class BaseActivity extends Activity {
+public abstract class BaseActivity extends Activity{
 
 	/** Your ad unit id. Replace with your actual ad unit id. */
 	private static String AD_UNIT_ID = null;
@@ -68,7 +67,7 @@ public abstract class BaseActivity extends Activity {
 
 	protected QuestionImpl mQuestionImpl;
 
-	protected QuestionEntity mQuestionEntity; 
+	protected QuestionEntity mQuestionEntity;
 
 	protected AQuery mAQuery;
 
@@ -81,7 +80,6 @@ public abstract class BaseActivity extends Activity {
 	protected int size = 0;
 
 	protected int index = 0;
- 
 
 	private int max_height = 0;
 	private int min_height = 0;
@@ -96,16 +94,16 @@ public abstract class BaseActivity extends Activity {
 			finish();
 		}
 
-//		setInterstitialAd();
+		// setInterstitialAd();
 		initialize();
 	}
 
-	protected void initialize() { 
+	protected void initialize() {
 
 		max_height = mContext.getResources().getInteger(
 				R.integer.maximum_height);
 		min_height = mContext.getResources().getInteger(
-				R.integer.minimum_height); 
+				R.integer.minimum_height);
 
 		this.mRltFrame = (RelativeLayout) this.findViewById(R.id.rltFrame);
 
@@ -133,7 +131,7 @@ public abstract class BaseActivity extends Activity {
 
 		this.mQuestionImpl = new QuestionImpl(mContext);
 
-		size = this.mQuestionImpl.getSize( );
+		size = this.mQuestionImpl.getSize();
 		ruby = PreferenceUtil.getValue(mContext, Constans.KEY_RUBY,
 				Constans.DEFAULT_VALUE_RUBY);
 
@@ -263,11 +261,9 @@ public abstract class BaseActivity extends Activity {
 	private void youWin() {
 		finish();
 		Intent intent = new Intent(mContext, VictoryActivity.class);
-//		intent.putExtra(Constans.KEY_TYPE, type);
+		// intent.putExtra(Constans.KEY_TYPE, type);
 		startActivity(intent);
 	}
-
-	 
 
 	protected abstract void passQuestion();
 
@@ -279,7 +275,7 @@ public abstract class BaseActivity extends Activity {
 
 		SoundUtil.hexat(mContext, SoundUtil.OVER);
 	}
-  
+
 	protected void next() {
 		mTvRuby.setText(ruby + "");
 		mTvLevel.setText((index + 1) + "");
@@ -289,7 +285,7 @@ public abstract class BaseActivity extends Activity {
 			return;
 		}
 
-		this.mQuestionEntity = this.mQuestionImpl.getQuestionByPosition(index  );
+		this.mQuestionEntity = this.mQuestionImpl.getQuestionByPosition(index);
 
 		if (this.mQuestionEntity.getDapAnKoDau().length() > Constans.MAX_LEN) {
 			mRltFrame.getLayoutParams().height = min_height;
@@ -322,11 +318,11 @@ public abstract class BaseActivity extends Activity {
 			return;
 		}
 
-		if (mAnswerAdapter.suscess(mQuestionEntity)) {
+		if (mAnswerAdapter.suscess(mQuestionEntity)) {	
 			passQuestion();
 			ruby += Constans.RUBY_BONUS;
 			PreferenceUtil.setValue(mContext, Constans.KEY_RUBY, ruby);
-			next();
+			//next();
 		} else {
 			failQuestion();
 		}
