@@ -44,7 +44,7 @@ public class VictoryActivity extends Activity {
 		Animation animTopDown = AnimationUtils.loadAnimation(mContext,
 				R.anim.grow_from_top);
 		Animation animLeftRightCycle = AnimationUtils.loadAnimation(mContext,
-				R.anim.cycle_text);
+				R.anim.shaking);
 		Animation animRotate = AnimationUtils.loadAnimation(mContext,
 				R.anim.rotate);
 		animTopDown.setDuration(2000);
