@@ -88,11 +88,11 @@ public abstract class BaseActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
-		if (!ConnectionDetectorUtil.isConnectingToInternet(mContext)) {
+		/*if (!ConnectionDetectorUtil.isConnectingToInternet(mContext)) {
 			Toast.makeText(mContext, R.string.internet_error_msg,
 					Toast.LENGTH_LONG).show();
 			finish();
-		}
+		}*/
 
 		// setInterstitialAd();
 		initialize();
