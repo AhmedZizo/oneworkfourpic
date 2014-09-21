@@ -19,10 +19,11 @@
 
         <ImageView
             android:id="@+id/img_question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="@dimen/view_img_question_height"
+            android:layout_height="@dimen/view_img_question_height"
             android:layout_centerInParent="true"
             android:adjustViewBounds="true"
+            android:scaleType="fitXY"
             android:contentDescription="@string/app_name"
             android:src="@drawable/st" />
     </RelativeLayout>
