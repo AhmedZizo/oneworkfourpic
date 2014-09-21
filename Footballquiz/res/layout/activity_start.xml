@@ -6,6 +6,7 @@
     android:background="@drawable/bg2x" >
 
     <ImageView
+        android:contentDescription="@string/app_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/img1"
@@ -15,6 +16,7 @@
         android:background="@drawable/tv_foodball1" />
 
     <ImageView
+        android:contentDescription="@string/app_name"
         android:id="@+id/img1"
         android:layout_width="150dip"
         android:layout_height="150dip"
@@ -51,7 +53,17 @@
             android:layout_alignParentLeft="true"
             android:background="@drawable/ic_wheel"
             android:contentDescription="@string/app_name" />
-
+		
+        
+        <ImageView
+            android:id="@+id/ivSound"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toLeftOf="@+id/ivInfo"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_sound_on"
+            android:contentDescription="@string/app_name" />
+        
         <ImageView
             android:id="@+id/ivInfo"
             android:layout_width="40dp"

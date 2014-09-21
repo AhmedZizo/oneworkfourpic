@@ -5,6 +5,7 @@
     android:layout_height="fill_parent"
     android:clipChildren="false"
     android:orientation="vertical"
+    android:paddingTop="15dp"
     android:weightSum="5.0" >
 
     <LinearLayout
@@ -13,25 +14,29 @@
         android:layout_weight="1.0"
         android:clipChildren="false"
         android:orientation="vertical"
-        android:weightSum="2.0" >
+        android:weightSum="3.0" >
 
-        <TextView
+        <com.gtotek.football.customview.FontTextView
+            android:id="@+id/tvWonderful"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.0"
             android:gravity="bottom|center"
-            android:text="dsfd"
+            android:layout_weight="1.0"
+            android:text="WONDERFUL!"
             android:textColor="#ffffffff"
-            android:textSize="40.0dip" />
+            android:textSize="42.0dip"
+            app:fontName="MyriadPro-Bold.otf" />
 
-        <TextView
+        <com.gtotek.football.customview.FontTextView
+            android:id="@+id/tvGuessed"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1.0"
             android:gravity="top|center"
-            android:text="dsfd"
+            android:layout_weight="2.0"
+            android:text="You've guessed the word"
             android:textColor="#ffffffff"
-            android:textSize="20.0dip"/>
+            android:textSize="24.0dip"
+            app:fontName="MyriadPro.ttf" />
     </LinearLayout>
 
     <ImageView
@@ -44,28 +49,34 @@
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="3.0"
+        android:layout_weight="2.0"
         android:clipChildren="false"
         android:gravity="center"
         android:orientation="vertical"
         android:weightSum="2.0" >
 
+        <GridView
+            android:id="@+id/gvWin"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:cacheColorHint="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="7"
+            android:verticalSpacing="5dp" >
+        </GridView>
+
         <ImageView
             android:id="@id/imageView1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_weight="1.0"
             android:src="@drawable/ic_app" />
-
-        <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1.0"
-            android:gravity="top|center"
-            android:text="sdfdsf"
-            android:textColor="#ffffffff"
-            android:textSize="20.0dip"/>
     </LinearLayout>
 
     <ImageView
@@ -83,12 +94,16 @@
         android:gravity="center"
         android:orientation="vertical" >
 
-        <Button
-            style="@style/Button.Green.Big"
+        <com.gtotek.football.customview.FontTextView
+            android:id="@+id/tvContinue"
+            style="@style/Button.Green.Medium"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="dfds" />
+            android:layout_height="65dp"
+            android:layout_above="@+id/llIntro"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/tv_continues_title"
+            app:fontName="MyriadPro-Bold.otf" />
     </LinearLayout>
 
 </LinearLayout>
