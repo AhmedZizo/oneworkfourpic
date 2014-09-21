@@ -79,27 +79,9 @@
         <item name="android:paddingRight">@dimen/winscreen_tv_continues_padding_left_right</item>
     </style>
 
-    <style name="style_menu_item_play">
-        <item name="android:textSize">24.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ff0000ff</item>
-        <item name="android:shadowColor">#ffffffff</item>
-        <item name="android:shadowDx">1.0</item>
-        <item name="android:drawableRight">@drawable/btn_chose_n</item>
-        <item name="android:typeface">sans</item>
-        <item name="android:shadowDy">1.0</item>
-        <item name="android:shadowRadius">2.0</item>
-    </style>
+   
 
-    <style name="style_actress_info">
-        <item name="android:textSize">19.0sp</item>
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ff0000ff</item>
-        <item name="android:typeface">serif</item>
-        <item name="android:shadowColor">#ffffffff</item>
-        <item name="android:shadowRadius">1.0</item>
-    </style>
-
+  
     <style name="style_piece_cell">
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">fill_parent</item>
@@ -193,29 +175,7 @@
         <item name="android:shadowRadius">2.0</item>
     </style>
 
-    <style name="Text.Level" parent="@style/Text">
-        <item name="android:textStyle">bold</item>
-        <item name="android:textColor">#ffebebeb</item>
-        <item name="android:gravity">center</item>
-        <item name="android:shadowColor">#cc000000</item>
-    </style>
-
-    <style name="Text.Level.Big" parent="@style/Text.Level">
-        <item name="android:textSize">18.0dip</item>
-        <item name="android:background">@drawable/bg_level</item>
-        <item name="android:shadowDy">3.0</item>
-        <item name="android:shadowRadius">15.0</item>
-    </style>
-
-    <style name="Text.Level.Small" parent="@style/Text.Level">
-        <item name="android:textSize">13.0dip</item>
-        <item name="android:background">@drawable/bg_level_small</item>
-        <item name="android:paddingBottom">2.0dip</item>
-        <item name="android:shadowDy">2.0</item>
-        <item name="android:shadowRadius">4.0</item>
-    </style>
-    
-    
+       
       <style name="dialog_animation_slide">
         <item name="android:windowEnterAnimation">@anim/slide_in_left</item>
         <item name="android:windowExitAnimation">@anim/slide_out_right</item>
