@@ -42,7 +42,7 @@ import com.gtotek.football.util.PreferenceUtil;
 import com.gtotek.football.util.SoundUtil;
 import com.gtotek.footballquiz.R;
 
-public abstract class BaseActivity extends Activity{
+public abstract class BaseActivity extends Activity {
 
 	/** Your ad unit id. Replace with your actual ad unit id. */
 	private static String AD_UNIT_ID = null;
@@ -280,7 +280,7 @@ public abstract class BaseActivity extends Activity{
 		mTvRuby.setText(ruby + "");
 		mTvLevel.setText((index + 1) + "");
 
-		if (index >= size) {		
+		if (index >= size) {
 			youWin();
 			return;
 		}
@@ -314,15 +314,15 @@ public abstract class BaseActivity extends Activity{
 
 	private void checkWin() {
 
-//		if (mAnswerAdapter.isHaveEmpty()) {
-//			return;
-//		}
- 
-		if (mAnswerAdapter.suscess(mQuestionEntity)) { 
+		// if (mAnswerAdapter.isHaveEmpty()) {
+		// return;
+		// }
+
+		if (mAnswerAdapter.suscess(mQuestionEntity)) {
 			passQuestion();
 			ruby += Constans.RUBY_BONUS;
 			PreferenceUtil.setValue(mContext, Constans.KEY_RUBY, ruby);
-			//next();
+			// next();
 		} else {
 			failQuestion();
 		}
