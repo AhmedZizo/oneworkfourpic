@@ -14,7 +14,7 @@
         android:gravity="bottom|center"
         android:text="@string/congratulations"
         android:textColor="#ffffffff"
-        android:textSize="42.0dip"
+        android:textSize="40.0dip"
         app:fontName="North Face.ttf" />
 
     <com.gtotek.football.customview.FontTextView
@@ -30,7 +30,7 @@
         app:fontName="MyriadPro.ttf" />
 
     <ImageView
-        android:id="@+id/img1"
+        android:id="@+id/imgBall"
         android:layout_width="200dip"
         android:layout_height="200dip"
         android:layout_centerHorizontal="true"
