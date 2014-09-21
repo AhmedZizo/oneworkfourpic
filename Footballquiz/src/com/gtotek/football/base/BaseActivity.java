@@ -94,7 +94,7 @@ public abstract class BaseActivity extends Activity {
 			finish();
 		}*/
 
-		// setInterstitialAd();
+		 setInterstitialAd();
 		initialize();
 	}
 
@@ -319,6 +319,7 @@ public abstract class BaseActivity extends Activity {
 		}
 
 		if (mAnswerAdapter.suscess(mQuestionEntity)) {
+//		if (true) {
 			passQuestion();
 			ruby += Constans.RUBY_BONUS;
 			PreferenceUtil.setValue(mContext, Constans.KEY_RUBY, ruby);

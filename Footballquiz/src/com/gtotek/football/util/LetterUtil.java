@@ -17,7 +17,7 @@ public class LetterUtil {
 	public static List<Letter> generateSuggestion(QuestionEntity questionEntity) {
 		List<Letter> letters = new ArrayList<Letter>();
 
-		String dapAnKoDau = questionEntity.getDapAnKoDau();
+		String dapAnKoDau = trimAll(questionEntity.getDapAnKoDau());
 
 		int size = dapAnKoDau.length();
 
@@ -58,6 +58,11 @@ public class LetterUtil {
 		Collections.shuffle(letters);
 
 		return letters;
+	}
+	
+	public static final String trimAll(String s) {
+		String string = s.replaceAll("\\s+", "");
+		return string;
 	}
 
 	public static List<Letter> getEmptyAnswerDefault(
