@@ -66,7 +66,7 @@ public class StartPlayActivity extends Activity implements View.OnClickListener 
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
-		builder.setTitle("Thông tin");
+		builder.setTitle(getString(R.string.infomartion));
 		builder.setIcon(android.R.drawable.ic_dialog_info);
 		builder.setMessage(getResources().getText(R.string.version_info)
 				.toString());
