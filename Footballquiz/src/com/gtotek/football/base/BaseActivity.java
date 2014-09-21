@@ -280,7 +280,7 @@ public abstract class BaseActivity extends Activity{
 		mTvRuby.setText(ruby + "");
 		mTvLevel.setText((index + 1) + "");
 
-		if (index >= size) {
+		if (index >= size) {		
 			youWin();
 			return;
 		}
@@ -318,9 +318,7 @@ public abstract class BaseActivity extends Activity{
 //			return;
 //		}
  
-//		if (mAnswerAdapter.suscess(mQuestionEntity)) {
-		if(true){
- 
+		if (mAnswerAdapter.suscess(mQuestionEntity)) { 
 			passQuestion();
 			ruby += Constans.RUBY_BONUS;
 			PreferenceUtil.setValue(mContext, Constans.KEY_RUBY, ruby);
