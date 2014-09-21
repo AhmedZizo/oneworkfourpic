@@ -35,4 +35,9 @@
     <dimen name="actionbar_tv_ruby_height">50.0dip</dimen>
     <dimen name="actionbar_tv_ruby_padding_left">5.0dp</dimen>
     <dimen name="actionbar_tv_ruby_padding_right">18.0dp</dimen>
+    
+    
+      <!-- Victory screen -->
+    <dimen name="vic_img_ball_width_height">150dp</dimen>
+    
 </resources>
